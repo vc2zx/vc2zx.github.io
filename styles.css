@@ -80,6 +80,12 @@ body > header {
     backdrop-filter: blur(10px);
 }
 
+.nav-brand img {
+    display: block;
+    width: 60px;
+    height: auto;
+}
+
 nav {
     max-width: var(--max-width);
     margin: 0 auto;
@@ -121,6 +127,18 @@ nav a:not(:first-child)::after {
 
 nav a:not(:first-child):hover::after {
     width: 100%;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
 }
 
 
@@ -206,7 +224,7 @@ p {
 ========================= */
 
 #home {
-    min-height: 78vh;
+    min-height: 50vh;
 
     display: flex;
     flex-direction: column;
@@ -280,6 +298,12 @@ p {
 
 .hero-links .primary-link:hover {
     background-color: var(--cyan-light);
+}
+
+.hero-brand img {
+    width: min(520px, 90%);
+    height: auto;
+    display: block;
 }
 
 
