@@ -3,16 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Suliman Altayar | AI Engineer</title>
-    <meta name="description" content="Portfolio of Suliman Altayar, a Computer Science and AI graduate working in applied AI, quality assurance, and test automation. Explore AI projects and software testing work with Cypress and Apache JMeter.">
+    <title>Suliman AlTayar | Quality Assurance Engineer · Applied AI &amp; Software Engineering</title>
+    <meta name="description" content="Suliman AlTayar, Quality Assurance Engineer in co-op training at Tuwaiq Academy in Riyadh. Computer Science and AI graduate with Python, agentic AI, NLP, backend development, and Playwright experience.">
+    <link rel="canonical" href="https://vc2zx.github.io/">
     <link rel="icon" href="Docs/SLogoB.png">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
     <header>
-        <nav>
-            <a class="nav-brand" href="#home"><img src="Docs/SLogoB.png" alt="Suliman"></a>
+        <nav aria-label="Main navigation">
+            <a class="nav-brand" href="#home"><img src="Docs/SLogoB.png" alt="Suliman AlTayar"></a>
             <a href="#about">About</a>
+            <a href="#experience">Experience</a>
             <a href="#projects">Projects</a>
             <a href="#development">Training</a>
             <a href="#skills">Skills</a>
@@ -21,16 +24,16 @@
         </nav>
     </header>
 
-    <main>
+    <main id="main-content">
         <!-- Hero -->
         <section id="home">
-            <div class="hero-brand"><img src="Docs/Logo.png" alt="Suliman"></div>
-            <h1 class="sr-only">Suliman Altayar</h1>
-            <h2>AI Engineer | Agentic AI | Machine Learning • NLP | Software Development | QA & Test Automation</h2>
-            <p>I build practical AI systems and software applications with a focus on Agentic AI and machine learning while applying QA practices across manual testing end to end automation and performance testing.</p>
+            <div class="hero-brand"><img src="Docs/Logo.png" alt="Suliman AlTayar"></div>
+            <h1 class="sr-only">Suliman AlTayar</h1>
+            <h2>Quality Assurance Engineer | Applied AI &amp; Software Engineering</h2>
+            <p>I build Python applications and applied AI prototypes, and test software through functional testing and Playwright automation. Based in Riyadh, Saudi Arabia.</p>
             <div class="hero-links">
                 <a class="primary-link" href="#projects">View Projects</a>
-                <a href="Docs/Suliman_Altayar_CV.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+                <a href="Docs/Suliman_AlTayar_CV.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
                 <a href="https://github.com/vc2zx" target="_blank" rel="noopener noreferrer">GitHub</a>
                 <a href="https://www.linkedin.com/in/sulimanksa/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             </div>
@@ -39,8 +42,25 @@
         <!-- About -->
         <section id="about">
             <h2>About</h2>
-            <p>I am a Computer Science graduate specializing in Artificial Intelligence. My work spans applied AI, software quality assurance, and test automation.</p>
-            <p>I have built NLP and agentic AI applications using Python, Flask, RAG, LangGraph, and CrewAI. Through software testing projects and Tuwaiq Academy's Software Testing &amp; Automation Bootcamp, I have worked with manual test cases and bug reports, Cypress end-to-end tests, and introductory performance testing with Apache JMeter.</p>
+            <p>I am Suliman AlTayar, a Computer Science graduate specializing in Artificial Intelligence from Majmaah University. I develop applied AI and backend projects using Python, Flask, NLP, retrieval, and agentic workflows.</p>
+            <p>I currently work as a Quality Assurance Engineer in co-op training at Tuwaiq Academy, selected after strong performance in its Software Testing &amp; Automation Bootcamp. I manage testing for assigned tasks, from reviewing acceptance criteria to test design, Playwright automation, defect reporting, and retesting.</p>
+            <p>My engineering interests span AI systems, backend development, software quality, and AI evaluation. My earlier Cypress work comes from training and testing projects; Playwright is my current professional automation tool.</p>
+        </section>
+
+        <section id="experience">
+            <h2>Professional Experience</h2>
+            <article class="development-item">
+                <h3>Quality Assurance Engineer</h3>
+                <p class="organization">Tuwaiq Academy · Co-op Training · October 2026 – Present</p>
+                <p>Selected for cooperative training following strong performance in the Software Testing &amp; Automation Bootcamp.</p>
+                <ul>
+                    <li>Review Jira user stories and acceptance criteria, and independently manage the testing workflow for assigned tasks.</li>
+                    <li>Design and execute manual, functional, negative, regression, and end-to-end test cases.</li>
+                    <li>Develop, execute, and maintain Playwright tests, with separate GitHub test suites for different systems.</li>
+                    <li>Document and track defects in Jira, retest fixes, and maintain test cases and reports in Excel.</li>
+                </ul>
+                <p class="project-tech">Playwright · Jira · GitHub · Excel</p>
+            </article>
         </section>
 
         <!-- Projects -->
@@ -51,9 +71,9 @@
             <article class="project featured-project">
                 <p class="project-type">Agentic AI · RAG · Software Development</p>
                 <h3>BALAGH</h3>
-                <p class="project-summary">An Arabic community issue management system for triage, retrieval, and intelligent routing.</p>
-                <p>BALAGH combines deterministic triage, retrieval-augmented generation, and agentic workflows to classify and prioritize reports, support case recommendations, and route issues. Its LangGraph workflows include orchestration, retries, state persistence, and human review.</p>
-                <p class="project-tech">Python · LangGraph · CrewAI · RAG · Ollama · Qwen3 · SQLite</p>
+                <p class="project-summary">An Arabic-first local research prototype for community report intake, source retrieval, and staff review.</p>
+                <p>BALAGH separates report intake, local-model proposals, safety checks, source retrieval, possible duplicate suggestions, and staff decisions. Its repository includes LangGraph workflows, while the current Flask application queues model analysis for human review and stores case history in SQLite. It is a prototype with no government integration or production deployment.</p>
+                <p class="project-tech">Python · Flask · LangGraph · Source Retrieval · Ollama · SQLite</p>
                 <div class="project-links">
                     <a href="https://github.com/vc2zx/BALAGH" target="_blank" rel="noopener noreferrer">GitHub</a>
                 </div>
@@ -71,19 +91,29 @@
             </article>
 
             <article class="project">
-                <p class="project-type">Quality Assurance · Manual Testing · Test Automation</p>
-                <h3>Software Testing — The Garage &amp; OrangeHRM</h3>
-                <p class="project-summary">Functional test design, Cypress end-to-end automation, and introductory performance testing.</p>
-                <p>For The Garage, I designed manual test cases and bug reports covering positive and negative functional scenarios. For OrangeHRM, I automated workflows with Cypress across Admin login, user and employee management, job titles, and My Info. I also used Apache JMeter for introductory performance testing and HTTP test plan debugging.</p>
-                <p class="project-tech">Manual Testing · Test Cases · Bug Reports · Cypress · JavaScript · Apache JMeter</p>
+                <p class="project-type">Quality Assurance · Training Project · Cypress</p>
+                <h3>Cypress Web Automation Assessment</h3>
+                <p class="project-summary">End-to-end tests for The Garage and Satr websites.</p>
+                <p>A training and assessment suite covering navigation, language switching, program and course discovery, search, and empty sign-in validation. The repository records 14 passed tests and 0 failed after execution on the Tuwaiq Academy network. This is a recorded result, separate from my current professional Playwright work.</p>
+                <p class="project-tech">JavaScript · Cypress · End-to-End Testing</p>
+                <div class="project-links"><a href="https://github.com/vc2zx/Suliman-Altayar-Cypress-Automation" target="_blank" rel="noopener noreferrer">GitHub</a></div>
             </article>
 
             <article class="project">
-                <p class="project-type">Computer Vision · Machine Learning</p>
-                <h3>Helmet Detection System</h3>
-                <p class="project-summary">A classical computer vision system for helmet image classification.</p>
-                <p>The project uses image preprocessing and handcrafted feature extraction to classify helmet and no-helmet images with classical machine learning models.</p>
-                <p class="project-tech">Python · OpenCV · HOG · LBP · SVM · KNN · Random Forest</p>
+                <p class="project-type">Arabic NLP · Evidence Management · Human Review</p>
+                <h3>BAYYIN — Arabic Claim Review Workbench</h3>
+                <p class="project-summary">A personal prototype for retrieving and reviewing evidence for Arabic claims.</p>
+                <p>Built with Python and Flask, using TF-IDF retrieval against stored official-source passages. It separates relevance scores from truth assessments and supports human approval, evidence versioning, and HTML/JSON exports. Source code is not yet published.</p>
+                <p class="project-tech">Python · Flask · TF-IDF · Text Retrieval</p>
+            </article>
+
+            <article class="project">
+                <p class="project-type">Course-Based Engineering · AI Services</p>
+                <h3>Raqib — Fraud Scoring Service</h3>
+                <p class="project-summary">Course-based engineering work from SDAIA Academy's Software Engineering Practices for AI Systems program.</p>
+                <p>The instructor supplied the project, model artifacts, datasets, and lab structure. The public repository documents FastAPI serving, layered architecture, automated tests, Docker, and CI/CD. This is educational engineering work, not an independently conceived product.</p>
+                <p class="project-tech">Python · FastAPI · Docker · Automated Testing · GitHub Actions</p>
+                <div class="project-links"><a href="https://github.com/vc2zx/sda-aie-113-fraud-service" target="_blank" rel="noopener noreferrer">GitHub</a></div>
             </article>
         </section>
 
@@ -93,19 +123,19 @@
 
             <article class="development-item">
                 <h3>Software Testing &amp; Automation Bootcamp</h3>
-                <p class="organization">Tuwaiq Academy · August 2026 – Present</p>
+                <p class="organization">Tuwaiq Academy · August – October 2026 · Completed; completion certificate received</p>
                 <p>Hands-on training in manual testing, functional test design, Cypress end-to-end automation, and performance testing with Apache JMeter.</p>
             </article>
 
             <article class="development-item">
                 <h3>Samsung Innovation Campus AI Course</h3>
-                <p class="organization">Samsung Innovation Campus · September 2026 – Present</p>
+                <p class="organization">Samsung Innovation Campus · October – December 2026 · Ongoing</p>
                 <p>Developing a stronger foundation in artificial intelligence through ongoing coursework, while connecting the concepts to my practical work in machine learning and applied AI.</p>
             </article>
 
             <article class="development-item">
-                <h3>Natural Language Processing Program</h3>
-                <p class="organization">Tuwaiq Academy · August 2026</p>
+                <h3>Building Transformer-Based Natural Language Processing Applications</h3>
+                <p class="organization">NVIDIA · August 2026 · Completed</p>
                 <p>Applied training in natural language processing, transformers, and model-based text processing.</p>
                 <figure>
                     <a href="https://learn.nvidia.com/certificates?id=Nii4mKG0RkChhsvsIm7MBw" target="_blank" rel="noopener noreferrer">
@@ -166,11 +196,11 @@
             </article>
             <article>
                 <h3>QA &amp; Testing</h3>
-                <p>Manual Testing · Test Case Design · Bug Reports · Functional &amp; Regression Testing · Cypress E2E · Apache JMeter · Introductory Performance Testing · HTTP/API Fundamentals</p>
+                <p>Playwright · Manual Testing · Test Case Design · Defect Reporting · Functional, Negative, Regression &amp; End-to-End Testing · Cypress (Training Projects) · Postman · Apache JMeter</p>
             </article>
             <article>
                 <h3>Tools</h3>
-                <p>Git · GitHub · Pandas · uv</p>
+                <p>Git · GitHub · Jira · Excel · Pandas · uv</p>
             </article>
         </section>
 
@@ -180,22 +210,23 @@
             <article>
                 <h3>Bachelor of Science in Computer Science – Artificial Intelligence</h3>
                 <p>Majmaah University</p>
-                <p>2022 – 2026</p>
-                <p>GPA: 4.47 / 5</p>
+                <p>August 2022 – June 2026 · Graduated with honors</p>
+                <p>GPA: 4.47 / 5.00</p>
             </article>
         </section>
 
         <!-- Contact -->
         <section id="contact">
             <h2>Contact</h2>
+            <p>Riyadh, Saudi Arabia · Arabic: Native · English: Proficient</p>
             <div class="contact-links">
-                <a href="mailto:Suliman.A.Altayar@gmail.com">Email</a>
+                <a href="mailto:Suliman.A.AlTayar@gmail.com">Email</a>
                 <a href="https://www.linkedin.com/in/sulimanksa/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                 <a href="https://github.com/vc2zx" target="_blank" rel="noopener noreferrer">GitHub</a>
             </div>
         </section>
     </main>
 
-    <footer><p>© 2026 Suliman Altayar</p></footer>
+    <footer><p>© 2026 Suliman AlTayar</p></footer>
 </body>
 </html>

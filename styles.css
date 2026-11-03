@@ -692,3 +692,11 @@ footer p {
         transition: none !important;
     }
 }
+/* Keyboard navigation and anchored sections */
+a:focus-visible { outline: 2px solid var(--cyan); outline-offset: 5px; }
+section { scroll-margin-top: 110px; }
+.skip-link { position: absolute; left: 16px; top: -80px; z-index: 20; padding: 10px 16px; background: var(--surface); }
+.skip-link:focus { top: 12px; }
+#experience ul { max-width: 720px; padding-left: 22px; color: #cbd5e1; }
+#experience li { margin-bottom: 10px; }
+@media (max-width: 760px) { section { scroll-margin-top: 16px; } }
